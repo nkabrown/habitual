@@ -1,5 +1,6 @@
 .sign-in-form {
   display: none;
+  height: 40%;
   width: 40%;
   z-index: 1;
   margin: 0 auto;
@@ -7,6 +8,6 @@
   left: 0;
   right: 0;
   padding-top: 20px;
-  border-radius: 4px;
-  background: rgb(237, 236, 230)
+  border: 10px solid #F2F2F2;
+  background-color: #FFF;
 }
