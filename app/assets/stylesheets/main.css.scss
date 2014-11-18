@@ -1,0 +1,15 @@
+body {
+  width: 100%;
+
+}
+
+.shim {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(1, 2, 2, 0.67);
+}
