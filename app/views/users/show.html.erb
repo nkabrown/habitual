@@ -1,1 +1,11 @@
 <h1><%= @user.name %></h1>
+
+<%= link_to "Make a Change", new_user_goal_path(@user) %>
+
+<p><% @user.goals.each do |goal| %>
+  <%= goal.body %>
+  <%= goal.step %>
+  <%= goal.routine %>
+<% end %>
+
+<%= link_to "Sign-Out", logout_path %>
