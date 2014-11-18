@@ -14,3 +14,21 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+
+  $(".shim").on('click', function() {
+    $(this).hide();
+    $(".sign-in-form").hide().css("top", "50%");
+    $("body").css("overflow", "visible");
+  });
+
+  $(".sign-in-btn").on('click', function(event) {
+    event.preventDefault();
+    $(".shim").show();
+    $(".sign-in-form").show().animate({ top: "90px" }, 200);
+    $("body").css("overflow", "hidden");
+    $("body").animate({ scrollTop: 0 }, 200);
+  });
+
+});
