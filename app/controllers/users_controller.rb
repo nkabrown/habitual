@@ -1,14 +1,14 @@
 class UsersController < ApplicationController
+ 
+  expose(:user, attributes: :user_params)
 
   def new
-    @user = User.new
   end
 
   def create
-    @user = User.new(user_params)
-    if @user.save
+    if user.save
       flash[:notice] = "Welcome to Prolific!"
-      redirect_to user_path(@user)
+      redirect_to user_path(user)
     else
       flash[:alert] = "We've encountered a problem. Please try again."
       render :new
@@ -16,7 +16,6 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
   end
 
   private

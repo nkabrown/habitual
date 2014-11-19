@@ -32,6 +32,8 @@ end
 
 gem 'bcrypt-ruby', '~> 3.1.5', require: "bcrypt"
 
+gem 'decent_exposure'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
