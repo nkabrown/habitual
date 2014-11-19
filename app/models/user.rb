@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
   validates_confirmation_of :password
   before_save :encrypt_password
   has_many :goals
+  has_many :mottos
 
   def encrypt_password
     self.password_salt = BCrypt::Engine.generate_salt
