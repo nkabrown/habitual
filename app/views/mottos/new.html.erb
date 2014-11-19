@@ -1,0 +1,6 @@
+<h1>Make a Motto</h1>
+
+<%= form_for ([@user, @user.mottos.build]), url: user_mottos_path(@user.id) do |f| %>
+  <p>Motto for the Week: <%= f.text_field :body %></p>
+  <%= f.submit %>
+<% end %>

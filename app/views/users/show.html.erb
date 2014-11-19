@@ -1,6 +1,10 @@
 <h1><%= @user.name %></h1>
 
+<% @user.mottos.each do |motto| %>
+  <p><%= motto.body %></p>
+<% end %>
 <%= link_to "Make a Change", new_user_goal_path(@user) %>
+<%= link_to "Motto", new_user_motto_path(@user) %>
 
 <p><% @user.goals.each do |goal| %>
   <%= goal.body %>
