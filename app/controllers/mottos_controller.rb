@@ -1,16 +1,17 @@
 class MottosController < ApplicationController
 
-  before_action :set_user, only: [:new, :create, :edit, :update]
+  expose(:user)
+  expose(:mottos) { user.mottos }
+  expose(:motto, attributes: :motto_params)
 
   def new
 
   end
 
   def create
-    @motto = @user.mottos.new(motto_params)
-    if @motto.save
+    if motto.save
       flash[:notice] = "You've created your own motto."
-      redirect_to user_path(@user)
+      redirect_to user_path(user)
     else
       flash[:alert] = "We've encountered a problem."
       render :new
@@ -33,10 +34,6 @@ class MottosController < ApplicationController
 
     def motto_params
       params.require(:motto).permit(:body, :id)
-    end
-
-    def set_user
-      @user = User.find(params[:user_id])
     end
 
 end

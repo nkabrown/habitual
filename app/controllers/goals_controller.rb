@@ -1,15 +1,16 @@
 class GoalsController < ApplicationController
 
+  expose(:user)
+  expose(:goals) { user.goals }
+  expose(:goal, attributes: :goal_params)
+
   def new
-    @user = User.find(params[:user_id])
   end
 
   def create
-    @user = User.find(params[:user_id])
-    @goal = @user.goals.new(goal_params)
-    if @goal.save
+    if goal.save
       flash[:notice] = "You've set a new goal."
-      redirect_to user_path(@user)
+      redirect_to user_path(user)
     else
       flash[:alert] = "We've encountered a problem."
       render :new
