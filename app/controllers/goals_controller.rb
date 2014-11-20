@@ -17,6 +17,25 @@ class GoalsController < ApplicationController
     end
   end
 
+  def edit
+
+  end
+
+  def update
+    if goal.save
+      flash[:notice] = "Your goal has been updated."
+      redirect_to user_path(user)
+    else
+      flash[:alert] = "We've encountered a problem."
+      render :edit
+    end
+  end
+
+  def destroy
+    goal.destroy
+    redirect_to user_path(user)
+  end
+
   private
 
     def goal_params

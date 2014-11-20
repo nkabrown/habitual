@@ -14,6 +14,13 @@
  *= require_self
  */
 
+// Variables
+//@import 'variables';
+
+// Vendor
+@import 'normalize';
+
+// Stylesheets
 @import 'main';
 @import 'forms';
 @import 'home';

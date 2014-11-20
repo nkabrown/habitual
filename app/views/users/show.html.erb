@@ -2,6 +2,7 @@
 
 <% user.mottos.each do |motto| %>
   <p><%= motto.body %></p>
+  <p><%= link_to "Delete", user_motto_path(user, motto), method: :delete %></p>
 <% end %>
 <%= link_to "Make a Change", new_user_goal_path(user) %>
 <%= link_to "Motto", new_user_motto_path(user) %>
@@ -10,6 +11,10 @@
   <%= goal.body %>
   <%= goal.step %>
   <%= goal.routine %>
+  <%= link_to "Delete", user_goal_path(user, goal), method: :delete %>
 <% end %>
 
 <%= link_to "Sign-Out", logout_path %>
+
+<%= link_to "Update Account", edit_user_path(user) %>
+<%= link_to "Delete Account", user_path(user), method: :delete %>

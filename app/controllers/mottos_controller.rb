@@ -23,11 +23,16 @@ class MottosController < ApplicationController
   end
 
   def update
-
+    if motto.save
+      redirect_to user_path(user)
+    else
+      render :edit
+    end
   end
 
   def destroy
-
+    motto.destroy
+    redirect_to user_path(user)
   end
   
   private
