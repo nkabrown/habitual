@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require sky-labels
 //= require_tree .
 
 $(document).ready(function() {
@@ -20,6 +21,7 @@ $(document).ready(function() {
   $(".shim").on('click', function() {
     $(this).hide();
     $(".sign-in-form").hide().css("top", "50%");
+    $(".sign-up-form").hide().css("top", "50%");
     $("body").css("overflow", "visible");
   });
 
@@ -27,6 +29,14 @@ $(document).ready(function() {
     event.preventDefault();
     $(".shim").show();
     $(".sign-in-form").show().animate({ top: "90px" }, 200);
+    $("body").css("overflow", "hidden");
+    $("body").animate({ scrollTop: 0 }, 200);
+  });
+
+  $(".sign-up-btn").on('click', function(event) {
+    event.preventDefault();
+    $(".shim").show();
+    $(".sign-up-form").show().animate({ top: "90px" }, 200);
     $("body").css("overflow", "hidden");
     $("body").animate({ scrollTop: 0 }, 200);
   });

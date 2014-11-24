@@ -1,8 +1,19 @@
-<h1>New Goals</h1>
+<div class="wrapper">
+<h1>New Habits</h1>
 
 <%= form_for [user, goal] do |f| %>
-  <p>Long-term Goal: <%= f.text_field :body %></p>
-  <p>Small Step: <%= f.text_field :step %></p>
-  <p>Daily Routine: <%= f.text_field :routine %></p>
-  <%= f.submit %>
+  <div class="field-wrapper">
+    <h3>Identify a goal you want to reach. Be ambitious and creative!</h3>
+    <p><%= f.text_field :body, placeholder: "Long-term Goal" %></p>
+  </div>
+  <div class="field-wrapper">
+    <h3>Now, what is the smallest change you can make towards reaching that goal?</h3>
+    <p><%= f.text_field :step, placeholder: "Small Step" %></p>
+  </div>
+  <div class="field-wrapper">
+    <h3>Think about some of the things you do everyday. Pick one of these daily routines to link your new small step too.</h3>
+   <p><%= f.text_field :routine, placeholder: "Daily Routine" %></p>
+  </div>
+  <%= f.submit "Make A Habit" %>
 <% end %>
+</div>
