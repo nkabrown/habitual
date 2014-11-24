@@ -12,10 +12,11 @@
  *
  *= require_tree .
  *= require_self
+ *= require sky-labels
  */
 
 // Variables
-//@import 'variables';
+@import 'variables';
 
 // Vendor
 @import 'normalize';
@@ -25,3 +26,4 @@
 @import 'forms';
 @import 'home';
 @import 'buttons';
+@import 'goals';

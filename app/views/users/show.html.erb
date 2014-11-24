@@ -1,3 +1,4 @@
+<div class="wrapper">
 <h1><%= user.name %></h1>
 
 <% user.mottos.each do |motto| %>
@@ -8,13 +9,14 @@
 <%= link_to "Motto", new_user_motto_path(user) %>
 
 <p><% user.goals.each do |goal| %>
-  <%= goal.body %>
-  <%= goal.step %>
-  <%= goal.routine %>
-  <%= link_to "Delete", user_goal_path(user, goal), method: :delete %>
+  <%= goal.body %><br>
+  <%= goal.step %><br>
+  <%= goal.routine %><br>
+  <%= link_to "Delete", user_goal_path(user, goal), method: :delete %><br>
 <% end %>
 
-<%= link_to "Sign-Out", logout_path %>
+<%= link_to "Sign-Out", logout_path %><br>
 
-<%= link_to "Update Account", edit_user_path(user) %>
+<%= link_to "Update Account", edit_user_path(user) %><br>
 <%= link_to "Delete Account", user_path(user), method: :delete %>
+</div>

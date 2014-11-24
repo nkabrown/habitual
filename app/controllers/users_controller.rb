@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 
   def create
     if user.save
-      flash[:notice] = "Welcome to Prolific!"
+      flash[:notice] = "Welcome to Habitual!"
       redirect_to user_path(user)
     else
       flash[:alert] = "We've encountered a problem. Please try again."
