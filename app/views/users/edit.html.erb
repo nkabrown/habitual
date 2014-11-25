@@ -1,9 +1,18 @@
+<div class="wrapper">
 <h1>Update Your Account</h1>
 
 <%= form_for user, url: user_path(user), method: :patch do |f| %>
-  <p>Name: <%= f.text_field :name %></p>
-  <p>Email: <%= f.email_field :email %></p>
-  <p>Password: <%= f.password_field :password %></p>
-  <p>Password Confirmation: <%= f.password_field :password_confirmation %></p>
+  <p>Name:</p>
+  <p><%= f.text_field :name %></p>
+  <p>Email:</p>
+  <p><%= f.email_field :email %></p>
+  <p>Password:</p>
+  <p><%= f.password_field :password %></p>
+  <p>Password Confirmation:</p>
+  <p><%= f.password_field :password_confirmation %></p>
   <%= f.submit "Update" %>
 <% end %>
+
+<p class="delete"><%= link_to "Delete Account", user_path(user), method: :delete %></p>
+
+</div>

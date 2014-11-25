@@ -5,8 +5,17 @@ body {
 
 h1 {
   font-family: "Bebas Neue", sans-serif;
+  font-size: 6em;
+  font-weight: 300;
+  color: #FAFDFB;
+  margin: 0 25px;
+}
+
+h2 {
+  font-family: "Steelfish", "Times", serif;
   font-size: 3em;
   font-weight: 300;
+  text-transform: uppercase;
   color: #FAFDFB;
 }
 
@@ -19,4 +28,14 @@ h1 {
   left: 0;
   z-index: 1;
   background: rgba(1, 2, 2, 0.67);
+}
+
+.delete {
+  text-decoration: none;
+  color: #D74242;
+}
+
+.breadcrumb-bar {
+  float: right;
+  display: block;
 }

@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Prolific</title>
+  <title>Habitual</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  
+  <div class="header">
+    <div class="header-wrapper">
+  <h1 class="logo">Habitual</h1>
+  <div class="breadcrumb-bar">
+  <% if session[:user_id] != nil %>
+    <%= link_to "Sign Out", logout_path %> | <%= link_to "Update Account", edit_user_path(user) %>
+  <% else %>
 
-  <h1>Habitual</h1>
+  <% end %>
+  </div>
+    </div>
+  </div>
 <%= yield %>
 
 </body>

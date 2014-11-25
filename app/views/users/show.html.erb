@@ -1,22 +1,23 @@
 <div class="wrapper">
-<h1><%= user.name %></h1>
+<h2><%= user.name %></h2>
 
+<div class="mottos-box">
 <% user.mottos.each do |motto| %>
   <p><%= motto.body %></p>
-  <p><%= link_to "Delete", user_motto_path(user, motto), method: :delete %></p>
+  <p class="delete"><%= link_to "Delete", user_motto_path(user, motto), method: :delete %></p>
 <% end %>
+</div>
+
 <%= link_to "Make a Change", new_user_goal_path(user) %>
 <%= link_to "Motto", new_user_motto_path(user) %>
 
+<div class="habits-box">
 <p><% user.goals.each do |goal| %>
   <%= goal.body %><br>
   <%= goal.step %><br>
   <%= goal.routine %><br>
-  <%= link_to "Delete", user_goal_path(user, goal), method: :delete %><br>
+  <span class="delete"><%= link_to "Delete", user_goal_path(user, goal), method: :delete %></span><br>
 <% end %>
+</div>
 
-<%= link_to "Sign-Out", logout_path %><br>
-
-<%= link_to "Update Account", edit_user_path(user) %><br>
-<%= link_to "Delete Account", user_path(user), method: :delete %>
 </div>
