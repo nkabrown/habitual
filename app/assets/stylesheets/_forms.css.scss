@@ -8,7 +8,16 @@ input {
 input[type="text"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-color: #98D0AF;
+  background-color: #9FDCCE;
+  color: #107771;
+  border-radius: 3px;
+  border: 0;
+  border-left: 2px solid #D5CDB1;
+  border-top: 2px solid #D5CDB1;
+  zoom: 1;
+  vertical-align: middle;
+  margin-bottom: 26px;
+  padding: 10px;
   appearance: none;
   outline: 0;
   outline: none;
@@ -17,6 +26,63 @@ input[type="text"] {
   width: 70%;
 }
 
+input[type="password"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #107771;
+  background-color: #9FDCCE;
+  border-radius: 3px;
+  border: 0;
+  border-left: 2px solid #D5CDB1;
+  border-top: 2px solid #D5CDB1;
+  zoom: 1;
+  vertical-align: middle;
+  margin-bottom: 26px;
+  padding: 10px;
+  appearance: none;
+  outline: 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #444;
+  width: 70%;
+}
+
+::-webkit-input-placeholder {
+  color: #FAFDFB;
+}
+
+::-moz-placeholder {
+  color: #FAFDFB;
+}
+
+:-moz-placeholder {
+  color: #FAFDFB;
+}
+
+:-ms-input-placeholder {
+  color: #FAFDFB;
+}
+
+input[type="email"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #9FDCCE;
+  color: #107771;
+  border-radius: 3px;
+  border: 0;
+  border-left: 2px solid #D5CDB1;
+  border-top: 2px solid #D5CDB1;
+  zoom: 1;
+  vertical-align: middle;
+  margin-bottom: 26px;
+  padding: 10px;
+  appearance: none;
+  outline: 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #444;
+  width: 80%;
+}
 
 .wrapper {
   width: 900px;
@@ -38,21 +104,20 @@ input[type="text"] {
   left: 0;
   right: 0;
   padding-top: 20px;
-  border: 10px solid #74C496;
+  border: 10px solid #F2F2F2;
   background-color: #FAFDFB;
 }
 
 .sign-up-form {
   display: none;
-  height: 40%;
+  height: 60%;
   width: 40%;
   z-index: 1;
   margin: 0 auto;
   position: absolute;
   left: 0;
   right: 0;
-  padding-top: 20px;
-  border: 10px solid #74C496;
+  border: 10px solid #F2F2F2;
   background-color: #FAFDFB;
 }
 
