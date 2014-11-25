@@ -8,8 +8,8 @@
 <% end %>
 </div>
 
-<%= link_to "Make a Change", new_user_goal_path(user) %>
-<%= link_to "Motto", new_user_motto_path(user) %>
+<span class="habit-btn"><%= link_to "Make a Change", new_user_goal_path(user) %></span>
+<span class="motto-btn"><%= link_to "Motto", new_user_motto_path(user) %></span>
 
 <div class="habits-box">
 <p><% user.goals.each do |goal| %>

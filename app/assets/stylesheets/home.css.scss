@@ -6,3 +6,43 @@
   height: 100vh;
 }
 
+.byline {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.seperator {
+  height: 12px;
+  background-color: #8BC9BB;
+  border-bottom: 6px solid #98D0AF;
+  margin: 42px 0 0;
+  text-align: center;
+}
+  
+.seperator-title {
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  background-color: #8BC9BB;
+  border-bottom: 7px solid #98D0AF;
+  color: #107771;
+  font-size: 20px;
+  height: 39px;
+  line-height: 36px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+  top: -13px;
+}
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.buttons {
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 50px;
+}
