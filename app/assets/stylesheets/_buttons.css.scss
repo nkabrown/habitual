@@ -51,10 +51,13 @@ input[type="submit"] {
   0 #5CB4A0, 9px 8px 0 #8BC9BB, 12px 11px 9px rgba(0,0,0,0.2);
   font-size: 30px;
   font-family: "Steelfish", "Times", serif;
+  position: relative;
   padding: 12px 20px;
   zoom: 1;
   text-transform: uppercase;
   transform: translate3d(0, 0, 0);
+  margin-right: 25px;
+
 }
 
 .sign-up-btn {
@@ -67,6 +70,7 @@ input[type="submit"] {
   0 #5CB4A0, 9px 8px 0 #8BC9BB, 12px 11px 9px rgba(0,0,0,0.2);
   font-size: 30px;
   font-family: "Steelfish", "Times", serif;
+  position: relative;
   padding: 12px 20px;
   zoom: 1;
   text-transform: uppercase;

@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
  
   expose(:user, attributes: :user_params)
+  expose(:mottos) { user.mottos }
+  expose(:motto)
 
   def new
 

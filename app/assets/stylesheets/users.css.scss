@@ -7,6 +7,20 @@ body {
   margin: 0 auto;
 }
 
+.user-buttons {
+  margin-bottom: 20px;
+}
+
+.col-one {
+  width: 45%;
+  float: left;
+}
+
+.col-two {
+  width: 45%;
+  float: right;
+}
+
 .mottos-box {
   font-family: "Steelfish", "Times", serif;
   font-size: 40px;
@@ -24,4 +38,8 @@ body {
   font-size: 18px;
   text-decoration: none;
   color: #D74242;
+}
+
+.user-nav {
+  clear: both;
 }

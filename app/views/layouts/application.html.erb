@@ -12,11 +12,6 @@
     <div class="header-wrapper">
   <h1 class="logo">Habitual</h1>
   <div class="breadcrumb-bar">
-  <% if session[:user_id] != nil %>
-    <%= link_to "Sign Out", logout_path %> | <%= link_to "Update Account", edit_user_path(user) %>
-  <% else %>
-
-  <% end %>
   </div>
     </div>
   </div>
