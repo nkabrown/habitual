@@ -8,10 +8,7 @@
 
 <div class="col-one">
 <div class="mottos-box">
-<% user.mottos.each do |motto| %>
-  <p><%= motto.body %></p>
-  <p class="delete"><%= link_to "Delete", user_motto_path(user, motto), method: :delete %></p>
-<% end %>
+  <p><%= user.mottos.order(:created_at).last.body %></p>
 </div>
 </div>
 
