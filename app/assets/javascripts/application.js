@@ -41,4 +41,5 @@ $(document).ready(function() {
     $("body").animate({ scrollTop: 0 }, 200);
   });
 
+  $(".login").attr("autocomplete", "off");
 });
