@@ -4,15 +4,15 @@
 <%= form_for [user, goal] do |f| %>
   <div class="field-wrapper">
     <h3>Identify a goal you want to reach. Be ambitious and creative!</h3>
-    <p><%= f.text_field :body, placeholder: "Long-term Goal", required: true %></p>
+    <p><%= f.text_field :body, placeholder: "Long-term Goal", required: true, autocomplete: "off" %></p>
   </div>
   <div class="field-wrapper">
     <h3>Now, what is the smallest change you can make towards reaching that<br>goal?</h3>
-    <p><%= f.text_field :step, placeholder: "Small Step", required: true %></p>
+    <p><%= f.text_field :step, placeholder: "Small Step", required: true, autocomplete: "off" %></p>
   </div>
   <div class="field-wrapper">
     <h3>Think about some of the things you do everyday. Pick one of these daily<br>routines to link your new small step too.</h3>
-   <p><%= f.text_field :routine, placeholder: "Daily Routine", required: true %></p>
+   <p><%= f.text_field :routine, placeholder: "Daily Routine", required: true, autocomplete: "off" %></p>
   </div>
   <%= f.submit "Make A Habit" %>
 <% end %>
