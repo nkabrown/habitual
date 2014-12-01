@@ -4,3 +4,21 @@
   color: #107771;
   width: 85%;
 }
+
+.instructions-box {
+  width: 100%;
+  border-top: 1px solid #FDFDFD;
+  border-bottom: 1px solid #FDFDFD;
+}
+
+.instruction {
+  width: 30%;
+  max-height: 250px;
+  float: left;
+  margin: 0 5px 0 5px;
+  padding: 0 5px 0 5px;
+}
+
+#center-instruction {
+  padding-left: 15px;
+}
