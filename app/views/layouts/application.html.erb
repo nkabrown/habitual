@@ -12,6 +12,11 @@
     <div class="header-wrapper">
   <h1 class="logo">Habitual</h1>
   <div class="breadcrumb-bar">
+    <% if session[:user_id] != nil %>
+      <p>Welcome <%= user.name %> | <%= link_to "Sign Out", logout_path %> | <%= link_to "Update Account", edit_user_path(user) %></p>
+    <% else %>
+
+    <% end %>
   </div>
     </div>
   </div>

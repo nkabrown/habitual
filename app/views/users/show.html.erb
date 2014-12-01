@@ -1,6 +1,4 @@
 <div class="wrapper">
-<h2><%= user.name %></h2>
-
 <div class="user-buttons">
 <span class="habit-btn"><%= link_to "Make a Change", new_user_goal_path(user) %></span>
 <span class="motto-btn"><%= link_to "Motto", new_user_motto_path(user) %></span>
@@ -19,16 +17,12 @@
 <div class="col-two">
 <div class="habits-box">
 <p><% user.goals.each do |goal| %>
-  <%= goal.body %><br>
-  <%= goal.step %><br>
-  <%= goal.routine %><br>
-  <span class="delete"><%= link_to "Delete", user_goal_path(user, goal), method: :delete %></span><br>
+  I want to <%= goal.step %>, each time I 
+  <%= goal.routine %>, in order to
+  <%= goal.body %>.<br>
+  <p class="delete"><%= link_to "Delete", user_goal_path(user, goal), method: :delete %></p><br>
 <% end %>
 </div>
 </div>
 
-<div class="user-nav">
-<%= link_to "Sign Out", logout_path %>
-<%= link_to "Update Account", edit_user_path(user) %>
-</div>
 </div>
