@@ -2,7 +2,6 @@ input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  
 }
 
 input[type="text"] {
@@ -48,19 +47,19 @@ input[type="password"] {
 }
 
 ::-webkit-input-placeholder {
-  color: #FAFDFB;
+  color: #107771;
 }
 
 ::-moz-placeholder {
-  color: #FAFDFB;
+  color: #107771;
 }
 
 :-moz-placeholder {
-  color: #FAFDFB;
+  color: #107771;
 }
 
 :-ms-input-placeholder {
-  color: #FAFDFB;
+  color: #107771;
 }
 
 input[type="email"] {
@@ -118,6 +117,8 @@ input[type="submit"] {
   display: none;
   height: 40%;
   width: 40%;
+  vertical-align: middle;
+  text-align: center;
   z-index: 1;
   margin: 0 auto;
   position: absolute;
@@ -130,10 +131,13 @@ input[type="submit"] {
 
 .sign-up-form {
   display: none;
-  height: 60%;
+  height: 65%;
   width: 40%;
+  vertical-align: middle;
+  text-align: center;
   z-index: 1;
   margin: 0 auto;
+  padding-top: 25px;
   position: absolute;
   left: 0;
   right: 0;
@@ -141,6 +145,35 @@ input[type="submit"] {
   background-color: #FAFDFB;
 }
 
+.goals-form {
+  width: 100%;
+  font-family: "Steelfish", sans-serif;
+  font-size: 1.5em;
+  background-color: #F7F1DE;
+  border-radius: 3px;
+  box-shadow: 1px 0px 0 #D2CAAB, 0px 1px 0 #B3A67B, 2px 1px 0 #D2CAAB, 1px 2px 0
+  #B3A67B, 3px 2px 0 #D2CAAB, 2px 3px 0 #B3A67B, 4px 3px 3px rgba(0,0,0,0.2);
+  margin-top: 25px;
+  padding: 20px;
+  text-align: center;
+}
+
+.goals-form input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #F7F1DE;
+  zoom: 1;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 16px;
+  padding: 10px;
+  outline: 0;
+  outline: none;
+  border-bottom: 1px solid #444;
+  width: 45%;
+
+}
 .sky-label {
   margin-top: 15px;
   position: relative;

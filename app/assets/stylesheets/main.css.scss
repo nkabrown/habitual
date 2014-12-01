@@ -19,6 +19,12 @@ h2 {
   color: #FAFDFB;
 }
 
+a {
+  text-decoration: none;
+  font-family: "Steelfish", "Times", serif;
+  color: #107771;
+}
+
 .shim {
   display: none;
   position: absolute;
@@ -31,11 +37,17 @@ h2 {
 }
 
 .delete {
+  text-align: right;
   text-decoration: none;
   color: #D74242;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
-.breadcrumb-bar {
-  float: right;
-  display: block;
+.nav-bar {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  font-family: "Steelfish", "Times", serif;
+  font-size: 1.5em;
 }

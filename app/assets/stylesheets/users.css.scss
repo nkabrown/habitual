@@ -8,29 +8,79 @@ body {
 }
 
 .user-buttons {
-  margin-bottom: 20px;
+  margin-top: 25px;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .col-one {
   width: 45%;
   float: left;
+  text-align: center;
+
+  .habit-title {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    border-radius: 3px;
+    border: 1px solid #107771;
+    color: #107771;
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 45px;
+    padding: 0 20px;
+    position: relative;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+  }
 }
 
 .col-two {
   width: 45%;
   float: right;
+  text-align: center;
+
+  .motto-title {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    border-radius: 3px;
+    border: 1px solid #107771;
+    color: #107771;
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 45px;
+    padding: 0 20px;
+    position: relative;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+  }
 }
 
 .mottos-box {
   font-family: "Steelfish", "Times", serif;
   font-size: 40px;
   color: #107771;
+  background-color: #F7F1DE;
+  border-radius: 3px;
+  box-shadow: 1px 0px 0 #D2CAAB, 0px 1px 0 #B3A67B, 2px 1px 0 #D2CAAB, 1px 2px 0
+  #B3A67B, 3px 2px 0 #D2CAAB, 2px 3px 0 #B3A67B, 4px 3px 3px rgba(0,0,0,0.2);
+  margin-top: 25px;
+  padding: 20px;
+  padding-bottom: 0;
 }
 
 .habits-box {
   font-family: "Steelfish", "Times", serif;
   font-size: 30px;
   color: #107771;
+  background-color: #F7F1DE;
+  border-radius: 3px;
+  box-shadow: 1px 0px 0 #D2CAAB, 0px 1px 0 #B3A67B, 2px 1px 0 #D2CAAB, 1px 2px 0
+  #B3A67B, 3px 2px 0 #D2CAAB, 2px 3px 0 #B3A67B, 4px 3px 3px rgba(0,0,0,0.2);
+  margin-top: 25px;
+  padding: 20px;
+  padding-bottom: 0;
 }
 
 .delete a {
@@ -38,6 +88,20 @@ body {
   font-size: 18px;
   text-decoration: none;
   color: #D74242;
+}
+
+.delete-account {
+  text-align: right;
+}
+
+.delete-account a {
+  font-family: "Steelfish", "Times", serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: #D74242;
+  border: 1px solid #D74242;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 .user-nav {
