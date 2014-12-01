@@ -146,14 +146,15 @@ input[type="submit"] {
 }
 
 .goals-form {
-  width: 100%;
+  clear: both;
+  width: 80%;
   font-family: "Steelfish", sans-serif;
   font-size: 1.5em;
   background-color: #F7F1DE;
   border-radius: 3px;
   box-shadow: 1px 0px 0 #D2CAAB, 0px 1px 0 #B3A67B, 2px 1px 0 #D2CAAB, 1px 2px 0
   #B3A67B, 3px 2px 0 #D2CAAB, 2px 3px 0 #B3A67B, 4px 3px 3px rgba(0,0,0,0.2);
-  margin-top: 25px;
+  margin-top: 55px;
   padding: 20px;
   text-align: center;
 }

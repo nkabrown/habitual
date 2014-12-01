@@ -1,28 +1,29 @@
 <div class="wrapper">
 <div class="user-buttons">
-<span class="habit-btn"><%= link_to "Make a Change", new_user_goal_path(user) %></span>
-<span class="motto-btn"><%= link_to "Motto", new_user_motto_path(user) %></span>
+  <span class="habit-btn"><%= link_to "Make a Change", new_user_goal_path(user) %></span>
+  <span class="motto-btn"><%= link_to "Motto", new_user_motto_path(user) %></span>
 </div>
 
 <div class="col-one">
   <div class="habit-title">My Habits</div>
-<p><% user.goals.each do |goal| %>
+  <p><% user.goals.each do |goal| %>
   <div class="habits-box">
-  I want to <%= goal.step %>, each time I 
-  <%= goal.routine %>, in order to
-  <%= goal.body %>.<br>
-  <p class="delete"><%= link_to "Delete", user_goal_path(user, goal), method: :delete %></p><br>
+    I want to <%= goal.step %>, each time I 
+    <%= goal.routine %>, in order to
+    <%= goal.body %>.<br>
+    <p class="delete"><%= link_to "Delete", user_goal_path(user, goal), method: :delete %></p><br>
   </div>
+  <% end %>
 </div>
 
 <div class="col-two">
   <div class="motto-title">My Mottos</div>
-<% user.mottos.each do |motto| %>
-  <div class="mottos-box">
-  <p><%= motto.body %></p>
-  <p class="delete"><%= link_to "Delete", user_motto_path(user, motto), method: :delete %></p>
-  </div>
-<% end %>
+  <% user.mottos.each do |motto| %>
+    <div class="mottos-box">
+      <p><%= motto.body %></p>
+      <p class="delete"><%= link_to "Delete", user_motto_path(user, motto), method: :delete %></p>
+    </div>
+  <% end %>
 </div>
 
 </div>
