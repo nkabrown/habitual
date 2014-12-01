@@ -5,24 +5,25 @@
 </div>
 
 <div class="col-one">
-<div class="mottos-box">
-<% user.mottos.each do |motto| %>
-  <p><%= motto.body %></p>
-  <p class="delete"><%= link_to "Delete", user_motto_path(user, motto), method: :delete %></p>
-<% end %>
-</div>
-</div>
-
-
-<div class="col-two">
-<div class="habits-box">
+  <div class="habit-title">My Habits</div>
 <p><% user.goals.each do |goal| %>
+  <div class="habits-box">
   I want to <%= goal.step %>, each time I 
   <%= goal.routine %>, in order to
   <%= goal.body %>.<br>
   <p class="delete"><%= link_to "Delete", user_goal_path(user, goal), method: :delete %></p><br>
+  </div>
 <% end %>
 </div>
+
+<div class="col-two">
+  <div class="motto-title">My Mottos</div>
+<% user.mottos.each do |motto| %>
+  <div class="mottos-box">
+  <p><%= motto.body %></p>
+  <p class="delete"><%= link_to "Delete", user_motto_path(user, motto), method: :delete %></p>
+  </div>
+<% end %>
 </div>
 
 </div>

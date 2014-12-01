@@ -10,6 +10,7 @@ class UsersController < ApplicationController
 
   def create
     if user.save
+      session[:user_id] = user.id
       flash[:notice] = "Welcome to Habitual!"
       redirect_to user_path(user)
     else
