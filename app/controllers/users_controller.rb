@@ -3,6 +3,8 @@ class UsersController < ApplicationController
   expose(:user, attributes: :user_params)
   expose(:mottos) { user.mottos }
   expose(:motto)
+  expose(:goals) { user.goals }
+  expose(:goal)
 
   def new
 
