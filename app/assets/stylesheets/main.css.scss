@@ -8,7 +8,10 @@ h1 {
   font-size: 6em;
   font-weight: 300;
   color: #FAFDFB;
-  margin: 0 25px;
+  text-shadow: 1px 0px 0 #BBDFC7, 0px 1px 0 #8DC6A0, 2px 1px 0 #BBDFC7, 1px 2px
+  0 #8DC6A0, 3px 2px 0 #BBDFC7, 2px 3px 0 #8DC6A0, 4px 3px 0 #BBDFC7, 3px 4px 0
+  #8DC6A0, 5px 4px 0 #BBDFC7, 4px 5px 0 #8DC6A0, 6px 5px 9px rgba(0,0,0,0.2);;
+  margin: 0 55px;
 }
 
 h2 {
@@ -50,4 +53,13 @@ a {
   right: 100px;
   font-family: "Steelfish", "Times", serif;
   font-size: 1.5em;
+}
+
+.key-term {
+  color: #004943;
+}
+
+.greeting {
+  color: #004943;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
 }

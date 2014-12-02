@@ -13,7 +13,7 @@
   <h1 class="logo">Habitual</h1>
   <div class="nav-bar">
     <% if session[:user_id] != nil %>
-      <p>Welcome <%= user.name %> | <%= link_to "Sign Out", logout_path %> | <%= link_to "Update Account", edit_user_path(user) %></p>
+      <p><span class="greeting">Welcome <%= user.name %></span> | <%= link_to "Sign Out", logout_path %> | <%= link_to "Update Account", edit_user_path(user) %></p>
     <% else %>
 
     <% end %>
