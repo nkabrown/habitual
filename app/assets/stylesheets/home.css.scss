@@ -6,9 +6,24 @@
   height: 100vh;
 }
 
+.logo {
+  font-weight: 200;
+}
+
 .byline {
   text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 125px;
+}
+
+.description {
+  text-align: center;
+  font-family: "Steelfish", "Times", serif;
+  font-size: 1.5em;
+  color: #107771;
+
+  a {
+    color: #004943;
+  }
 }
 
 .seperator {
@@ -19,7 +34,7 @@
   text-align: center;
   width: 1300px;
 }
-  
+
 .seperator-title {
   display: inline-block;
   vertical-align: middle;
