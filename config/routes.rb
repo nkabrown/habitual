@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
 
+  get 'users/:id/goals/email' => 'goals#email', as: :email
 
   resources :users, only: [:new, :create, :show, :edit, :update, :destroy] do
     resources :goals, only: [:new, :create, :edit, :update, :destroy]

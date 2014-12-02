@@ -36,6 +36,11 @@ class GoalsController < ApplicationController
     redirect_to user_path(user)
   end
 
+  def email
+    UserMailer.goal_email(user).deliver
+    redirect_to user_path(user)
+  end
+
   private
 
     def goal_params

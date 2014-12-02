@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <style type="text/css">
+      body {
+        width: 100% !important;
+        webkit-text-size-adjust: none;
+        margin: 0;
+        padding: 0;
+        background-color: #98D0AF;
+      }
+      #backgroundTable {
+        height: 100% !important;
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+        background-color: #98D0AF;
+      }
+    </style>
+  </head>
+  <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="background-color:#98D0AF;">
+    <center>
+      <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable" style="background-color: #98D0AF;">
+        <tr>
+          <td align="center" valign="top">
+            <!-- Begin Template Preheader -->
+            <table border="0" cellpadding="10" cellspacing="0" width="600" id="templatePreheader">
+              <tr>
+                <td valign="top" class="preheaderContent">
+                  <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                    <tr> 
+                      <td valign="top">
+                        <div>
+                          <p style="font-family:'Steelfish','Times',serif;color:#004943;font-size:18px;margin-left:75px;">Let Habitual help you reach your goals!</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateContainer">
+              <tr>
+                <td align="center" valign="top">
+                  <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateHeader">
+                    <tr>
+                      <td class="headerContent">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top">
+                  <table border="0" cellpadding="30" cellspacing="0" width="600" id="templateBody">
+                    <tr>
+                      <td valign="top" class="bodyContent">
+                        <table width="100%" height="250px" style="background-color:#F7F1DE;border:none;border-bottom:4pxsolid#DDD;box-shadow: 1px 0px 0 #D3CAAB, 0px 1px 0 #B3A67B, 2px 1px 0 #D3CAAB, 1px 2px 0 #B3A67B, 3px 2px 0 #D3CAAB, 2px 3px 0 #B3A67B, 4px 3px 3px rgba(0,0,0,0.2);">
+                          <tbody>
+                            <tr>
+                              <td style="background-color: #F7F1DE" height="45px" width="100%">
+                                <h2 style="font-size:24px;margin:0;paddign:.2em .5em;text-align:center;font-family:'Steelfish', 'Times', serif;color:#107771;vertical-align:middle;text-shadow: 1px 1px rgba(255,255,255,0.5);">YOUR HABITS</h2>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <% @user.goals.each do |goal| %>
+                                <p style="font-family:'Steelfish','Times',serif;font-size:24px;color:#107771;padding:20px;">I want to <%= goal.step %>, each time I <%= goal.routine %>, in order to <%= goal.body %>.</p>
+                                <% end %></p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center> 
+  </body>
+</html>
