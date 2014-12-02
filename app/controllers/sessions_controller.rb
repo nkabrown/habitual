@@ -9,8 +9,8 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to user_path(user)
     else
-      flash[:alert] = "There was a problem logging you in."
-      redirect_to login_path
+      flash[:alert] = "There was a problem logging you in. Please try again."
+      redirect_to root_path
     end
   end
 
