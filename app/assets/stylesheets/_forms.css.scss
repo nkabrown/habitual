@@ -48,18 +48,62 @@ input[type="password"] {
 
 ::-webkit-input-placeholder {
   color: #107771;
+  opacity: .5;
 }
 
 ::-moz-placeholder {
   color: #107771;
+  opacity: .5;
 }
 
 :-moz-placeholder {
   color: #107771;
+  opacity: .5;
 }
 
 :-ms-input-placeholder {
   color: #107771;
+  opacity: .5;
+}
+
+:hover::-webkit-input-placeholder {
+  opacity: .75;
+}
+
+:hover:-moz-placeholder {
+  opacity: .75;
+}
+
+:hover::-moz-placeholder {
+  opacity: .75;
+}
+
+:hover:-ms-input-placeholder {
+  opacity: .75;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+:focus:-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+:focus:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
 }
 
 input[type="email"] {
@@ -97,6 +141,13 @@ input[type="submit"] {
   zoom: 1;
   text-transform: uppercase;
   transform: translate3d(0, 0, 0);
+
+  &:hover {
+    top: 4px;
+    box-shadow: 1px 0px 0 #8BC9BB, 0px 1px 0 #5CB4A0, 2px 1px 0 #8BC9BB, 1px 2px
+    0 #5CB4A0, 3px 2px 0 #8BC9BB, 2px 3px 0 #5CB4A0, 4px 3px 0 #8BC9BB, 3px 4px
+    0 #5CB4A0, 5px 4px 0 #8BC9BB, 4px 5px 0 #5CB4A0, 6px 5px 6px rgba(0,0,0,0.2);
+  }
 
   &:focus {
     outline: none;
@@ -150,6 +201,7 @@ input[type="submit"] {
   width: 80%;
   font-family: "Steelfish", sans-serif;
   font-size: 1.5em;
+  letter-spacing: .025em;
   background-color: #F7F1DE;
   border-radius: 3px;
   box-shadow: 1px 0px 0 #D2CAAB, 0px 1px 0 #B3A67B, 2px 1px 0 #D2CAAB, 1px 2px 0

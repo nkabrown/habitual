@@ -9,4 +9,3 @@ BJ Fogg's behavior-change methodology he calls [Tiny
 Habits](http://www.tinyhabits.com). This app helps its users to set goals,
 commit to small steps, and link those steps to their already established daily
 routines.
-
