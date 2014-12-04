@@ -1,6 +1,6 @@
 <div class="wrapper">
 <div class="tutorial">
-  <p>Make use of the habits you've already created to help you build new habits follow these steps and fill out the form below.</p>
+  <p class="headline">Make use of the habits you've already created to help you build new habits. Follow these steps and fill out the form below.</p>
   <div class="instructions-box">
     <div class="instruction">
       <p>Identify a <span class="key-term">goal</span> you want to reach. Be ambitious and creative!</p>
@@ -16,9 +16,9 @@
 
 <div class="goals-form">
   <%= form_for [user, goal] do |f| %>
-    <p>I want to <%= f.text_field :step, placeholder: "take a small step towards my bigger goal", requried: true, autocomplete: "off" %>, each time I <%= f.text_field :routine, placeholder: "do a daily routine that I can link this small step to", required: true, autocomplete: "off" %>, in order to <%= f.text_field :body, placeholder: "begin reaching this long-term goal", required: true, autocomplete: "off" %>.</p>
+    <p>I want to <%= f.text_field :step, placeholder: "take a small step towards my bigger goal", required: true, autocomplete: "off" %>, each time I <%= f.text_field :routine, placeholder: "do a daily routine that I can link this small step to", required: true, autocomplete: "off" %>, in order to <%= f.text_field :body, placeholder: "begin reaching this long-term goal", required: true, autocomplete: "off" %>.</p>
     <%= f.submit "Make A New Habit" %>
   <% end %>
 </div>
-<p><%= link_to "Return", user_path(user) %></p>
+<p class="return-link"><%= link_to "Return", user_path(user) %></p>
 </div>

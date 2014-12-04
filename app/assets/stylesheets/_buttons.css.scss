@@ -58,6 +58,12 @@ input[type="submit"] {
   transform: translate3d(0, 0, 0);
   margin-right: 25px;
 
+  &:hover {
+    top: 4px;
+    box-shadow: 1px 0px 0 #8BC9BB, 0px 1px 0 #5CB4A0, 2px 1px 0 #8BC9BB, 1px 2px
+    0 #5CB4A0, 3px 2px 0 #8BC9BB, 2px 3px 0 #5CB4A0, 4px 3px 0 #8BC9BB, 3px 4px
+    0 #5CB4A0, 5px 4px 0 #8BC9BB, 4px 5px 0 #5CB4A0, 6px 5px 6px rgba(0,0,0,0.2);
+  }
 }
 
 .sign-up-btn {
@@ -75,6 +81,13 @@ input[type="submit"] {
   zoom: 1;
   text-transform: uppercase;
   transform: translate3d(0, 0, 0);
+
+  &:hover {
+    top: 4px;
+    box-shadow: 1px 0px 0 #8BC9BB, 0px 1px 0 #5CB4A0, 2px 1px 0 #8BC9BB, 1px 2px
+    0 #5CB4A0, 3px 2px 0 #8BC9BB, 2px 3px 0 #5CB4A0, 4px 3px 0 #8BC9BB, 3px 4px
+    0 #5CB4A0, 5px 4px 0 #8BC9BB, 4px 5px 0 #5CB4A0, 6px 5px 6px rgba(0,0,0,0.2);
+  }
 }
 
 .habit-btn {
@@ -91,10 +104,18 @@ input[type="submit"] {
   zoom: 1;
   text-transform: uppercase;
   transform: translate3d(0, 0, 0);
+  margin-right: 25px;
 
   a {
     color: #107771;
     text-decoration: none;
+  }
+
+  &:hover {
+    top: 4px;
+    box-shadow: 1px 0px 0 #8BC9BB, 0px 1px 0 #5CB4A0, 2px 1px 0 #8BC9BB, 1px 2px
+    0 #5CB4A0, 3px 2px 0 #8BC9BB, 2px 3px 0 #5CB4A0, 4px 3px 0 #8BC9BB, 3px 4px
+    0 #5CB4A0, 5px 4px 0 #8BC9BB, 4px 5px 0 #5CB4A0, 6px 5px 6px rgba(0,0,0,0.2);
   }
 }
 
@@ -113,8 +134,16 @@ input[type="submit"] {
   text-transform: uppercase;
   transform: translate3d(0, 0, 0);
 
+  &:hover {
+    top: 4px;
+    box-shadow: 1px 0px 0 #8BC9BB, 0px 1px 0 #5CB4A0, 2px 1px 0 #8BC9BB, 1px 2px
+    0 #5CB4A0, 3px 2px 0 #8BC9BB, 2px 3px 0 #5CB4A0, 4px 3px 0 #8BC9BB, 3px 4px
+    0 #5CB4A0, 5px 4px 0 #8BC9BB, 4px 5px 0 #5CB4A0, 6px 5px 6px rgba(0,0,0,0.2);
+  }
+
   a {
     color: #107771;
     text-decoration: none;
   }
+
 }
