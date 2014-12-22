@@ -27,3 +27,19 @@
 #center-instruction {
   padding-left: 15px;
 }
+
+@media all and (max-width: 950px) {
+  .instruction {
+    clear: both;
+    width: 100%;
+  }
+
+  .goals-form {
+    font-size: 1em;
+    padding: 1em;
+  }
+
+  .goals-form input[type="text"] {
+    width: 75%;
+  }
+}
