@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Habitual</title>
+  <%= favicon_link_tag 'favicon.png' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -11,14 +12,14 @@
   <%= flash[:alert] if flash[:alert] %>
   <div class="header">
     <div class="header-wrapper">
-  <h1 class="logo">Habitual</h1>
-  <div class="nav-bar">
-    <% if session[:user_id] != nil %>
-      <p><span class="greeting">Welcome <%= user.name %></span> | <%= link_to "Sign Out", logout_path, "data-no-turbolink" => true %> | <%= link_to "Update Account", edit_user_path(user) %></p>
-    <% else %>
+      <h1 class="logo">Habitual</h1>
+      <div class="nav-bar">
+        <% if session[:user_id] != nil %>
+          <p><span class="greeting">Welcome <%= user.name %></span> | <%= link_to "Sign Out", logout_path, "data-no-turbolink" => true %> | <%= link_to "Update Account", edit_user_path(user) %></p>
+        <% else %>
 
-    <% end %>
-  </div>
+        <% end %>
+      </div>
     </div>
   </div>
 <%= yield %>
